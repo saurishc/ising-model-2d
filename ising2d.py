@@ -27,7 +27,7 @@ for i in range(1,steps*nsq+1):
 plt.subplot(1,2,2)
 plt.imshow(s,origin='lower')
 plt.xticks([]); plt.yticks([])
-plt.xlabel('Starting Configuration after {} steps'.format(steps))
+plt.xlabel('Configuration after {} steps'.format(steps))
 plt.tight_layout()
 
 plt.show()
