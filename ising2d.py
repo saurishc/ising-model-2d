@@ -17,7 +17,6 @@ plt.suptitle('T={:.4g}'.format(T))
 plt.xticks([]); plt.yticks([])
 
 for i in range(1,steps*nsq+1):
-    t=i/nsq
     x,y=np.random.randint(0,n,2)
     s_neighbors=s[(x+1)%n,y]+s[(x-1)%n,y]+s[x,(y+1)%n]+s[x,(y-1)%n]
     delE=8*(s_neighbors-2)*(s[x,y]-0.5)
